@@ -1,0 +1,23 @@
+{
+  "configurations": {
+    "Python: Attach To Vim": {
+      "variables": {
+        "port": "5678",
+        "host": "localhost"
+      },
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "attach"
+      }
+    },
+    "CPP: Run current script": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "launch",
+        "program": "/home/mayde/Coding/CPP/cpp9/exec",
+        "args": [ "*${args:--update-gadget-config}" ],
+        "justMyCode#json": "${justMyCode:true}"
+      }
+    }
+  }
+}
